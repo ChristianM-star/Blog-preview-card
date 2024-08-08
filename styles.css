@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+--White: hsl(0, 0%, 100%);
+    --light-Gray: hsl(0, 0%, 42%);
+    --Gray: hsl(0, 0%, 7%);
+}
+
+body{
+    background-color: var(--Yellow);
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    height: calc(100dvh - 1px);
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+     
+}
+
+.container{
+    background-color: var(--White);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    justify-content:flex-start;
+    align-items: flex-start;
+    box-shadow: 6px 6px  var(--Gray);
+    border-radius: 1rem;
+    width: 100%;
+    border: 1px solid black;
+}
+ 
+
+.container #main-img{
+    border-radius: 1rem;
+   width: 100%;
+    object-fit: cover;
+}
+
+button{
+    padding: 8px ;
+    background-color:var(--Yellow);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    float: left;
+border: 1px solid var(--Yellow);
+}
+
+.container .date{
+    text-align: left;
+    color: black;
+}
+.container h1{
+    font-size: 23px;
+}
+
+.container p{
+    color: var(--light-Gray);
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.container .avatar{
+    display: flex;
+    align-items: center;
+    font-size: 4px;
+}
+
+.container span{
+font-weight: 800;
+margin-left: 0.5rem;
+display: inline;
+font-size: 16px;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+@media(max-width:450px){
+    body{
+        
+        height: 100dvh;
+        font-size: 15px;
+        margin: 0.5rem;
+        width: 95%;
+    }
+    #avatar-img{
+    width: 40px;
+    height: auto;
+    }
+    
+    .container{
+        padding: 0.4rem;
+        margin-top: 5px;
+    }
+    
+}
+
+@media(min-width:451px){
+    .container{
+        width: 90%;
+    }
+}
+@media(min-width:500px){
+    .container{
+        width:350px
+    }
+}
